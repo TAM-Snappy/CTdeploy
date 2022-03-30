@@ -8,6 +8,11 @@ if [ \$var_service = "apache" ]; then
   apt update -y
   apt install apache2 -y
 fi
+
+if [ \$var_service = "gcc" ]; then
+  apt update -y
+  apt install build-essential -y
+fi
 EOF
 
 ssh root@192.168.1.210 'bash -s' < tmp
