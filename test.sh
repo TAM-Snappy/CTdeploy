@@ -4,7 +4,7 @@ echo "pct create "'$var_id'" local:vztmpl/debian-11-standard_11.0-1_amd64.tar.gz
 echo "" >> tmp
 
 cat << EOF >> tmp
-if ["'$var_service'"= "apache" ]; then
+if [ \$var_service = "apache" ]; then
   apt update -y
   apt install apache2 -y
 fi
