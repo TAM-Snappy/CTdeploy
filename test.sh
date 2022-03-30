@@ -5,7 +5,7 @@ echo "" >> tmp
 
 echo "if ["'$var_service'"= apache] then" >> tmp 
 echo "apt update" >> tmp
-echo apt install apache2" >> tmp
+echo "apt install apache2" >> tmp
 
 ssh root@192.168.1.210 'bash -s' < tmp
 
