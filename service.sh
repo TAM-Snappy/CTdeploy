@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ \$var_service = "apache" ]; then
+if [ $1 = "apache" ]; then
   apt update -y
   apt install apache2 -y
 fi
 
-if [ \$var_service = "gcc" ]; then
+if [ $1 = "gcc" ]; then
   apt update -y
   apt install build-essential gcc -y
 fi
