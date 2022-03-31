@@ -11,7 +11,7 @@ fi
 
 if [ \$var_service = "gcc" ]; then
   apt update -y
-  apt install build-essential -y
+  apt install build-essential gcc -y
 fi
 EOF
 
