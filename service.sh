@@ -1,9 +1,5 @@
 #!/bin/bash
 
-
-
-
-cat << EOF >> param
 if [ \$var_service = "apache" ]; then
   apt update -y
   apt install apache2 -y
@@ -13,5 +9,3 @@ if [ \$var_service = "gcc" ]; then
   apt update -y
   apt install build-essential gcc -y
 fi
-EOF
-
