@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "En attente du lancement du conteneur .."
-while ! ping -c 1 $1 &> /dev/null; do
+while ! ping -c 1 $1; do
         sleep 1
 done
 
